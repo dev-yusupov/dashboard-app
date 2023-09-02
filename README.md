@@ -1,2 +1,1 @@
-# DASHBOARD-APP (Built using React)
-
+# DASHBOARD-APP (Built using React based on TypeScript)
