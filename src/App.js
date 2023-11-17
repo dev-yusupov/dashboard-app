@@ -1,14 +1,19 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import { Button } from 'react-daisyui';
-// import {  } from 'react-daisyui';
+import HomeLayout from './layouts/home';
 
 function App() {
   return (
     // <Button color={'neutral'}>Button</Button>
     <>
-    <h1>Hello, World</h1>
-    <Button size='lg'>Hello</Button>
+      <Router>
+        <Routes>
+
+          <Route path='*' element={<HomeLayout />} />
+
+        </Routes>
+      </Router>
     </>
   );
 }
