@@ -5,7 +5,6 @@ import Home from "./Home";
 const HomeLayout = () => {
     return (
         <>
-            <h1>Hello, World</h1>
             <Routes>
                 <Route path="/home" element={<Home />} />
             </Routes>

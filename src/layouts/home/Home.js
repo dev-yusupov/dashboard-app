@@ -1,6 +1,8 @@
+import Button from "../../components/Button"
+
 const Home = () => {
     return (
-        <h1>Working</h1>
+        <Button label={"Google"} />
     )
 }
 
