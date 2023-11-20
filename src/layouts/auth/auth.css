@@ -24,8 +24,9 @@
     font-size: 26px;
 }
 .Auth-Form {
+    position: absolute;
+    width: 740px;
+    height: 100%;
     right: 0;
     bottom: 0;
-    top: 0;
-    position: absolute;
 }

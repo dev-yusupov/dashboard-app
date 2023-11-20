@@ -1,0 +1,27 @@
+.Login-Page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0F123B;
+    color: white;
+    height: 100%;
+}
+.Login-Page .Auth-Form-Input-Section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.Login-Page .Auth-Form-Input-Section .Auth-Form-Input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.Login-Page .Auth-Form-Input-Section .Auth-Form-Input input {
+    width: 350px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    background-color: #0F123B;
+    border: 2px solid white;
+}
