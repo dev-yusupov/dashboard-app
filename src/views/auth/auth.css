@@ -1,12 +1,15 @@
 .Login-Page {
     display: flex;
     flex-direction: column;
-    row-gap: 60px;
+    row-gap: 0px;
     align-items: center;
     justify-content: center;
-    background-color: #0F123B;
     color: white;
     height: 100%;
+}
+.Login-Page .Login-Page-Title {
+    text-align: center;
+    max-width: 350px;
 }
 .Login-Page .Auth-Form-Input-Section {
     display: flex;
