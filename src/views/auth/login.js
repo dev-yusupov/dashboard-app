@@ -1,5 +1,7 @@
 import "./auth.css"
 
+import Footer from "./components/footer"
+
 const Login = () => {
     return (
         <div className="Login-Page">
@@ -17,6 +19,7 @@ const Login = () => {
                     <input name="password" type="password" placeholder="Password..." />
                 </div>
             </form>
+            <Footer />
         </div>
     )
 }

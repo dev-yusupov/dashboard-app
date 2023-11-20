@@ -1,6 +1,7 @@
 .Login-Page {
     display: flex;
     flex-direction: column;
+    row-gap: 60px;
     align-items: center;
     justify-content: center;
     background-color: #0F123B;
@@ -24,4 +25,20 @@
     color: white;
     background-color: #0F123B;
     border: 2px solid white;
+}
+
+.Auth-Footer .Auth-Footer-Links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.Auth-Footer p {
+    color: #b0b4e2;
+}
+.Auth-Footer .Auth-Footer-Links .Auth-Footer-Link {
+    list-style: none;
+}
+.Auth-Footer .Auth-Footer-Links .Auth-Footer-Link a {
+    color: #b0b4e2;;
+    text-decoration: none;
 }
