@@ -1,11 +1,17 @@
 import { Route, Routes } from "react-router-dom";
 import routes from "../../routes/dashboard-routes";
 
+import SideBar from "../../components/SideBar"
+
+import "./Home.css"
+
 const HomeLayout = () => {
 
     return (
-        <>
-            <Routes>
+        <div className="Dashboard">  
+        <SideBar />
+        <main className="Main-Section">
+        <Routes>
                 {
                     routes.map((route, key) => {
                         return (
@@ -14,7 +20,8 @@ const HomeLayout = () => {
                     })
                 }
             </Routes>
-        </>
+        </main>
+        </div>
     )
 }
 

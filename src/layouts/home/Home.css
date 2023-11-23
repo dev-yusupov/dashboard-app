@@ -1,0 +1,8 @@
+.Dashboard {
+    display: flex;
+    flex-direction: row;
+    background: #060B26;
+    top: 0;
+    bottom: 0;
+    color: white;
+}

@@ -2,7 +2,7 @@ import { FaHome } from "react-icons/fa";
 import { IoStatsChart, IoCard, IoSettings } from "react-icons/io5";
 
 // Elements
-import Home from "../views/dashboard/Home";
+import { Home } from "../views/dashboard";
 import Billing from "../views/dashboard/Billing";
 import Table from "../views/dashboard/Tables";
 
