@@ -2,7 +2,7 @@ import Button from "../../components/Button"
 
 const Home = () => {
     return (
-        <Button label={"Google"} />
+        <Button label={"Testing"} />
     )
 }
 

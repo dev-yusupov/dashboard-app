@@ -1,12 +1,18 @@
 import { Route, Routes } from "react-router-dom";
-
-import Home from "./Home";
+import routes from "../../routes/dashboard-routes";
 
 const HomeLayout = () => {
+
     return (
         <>
             <Routes>
-                <Route path="/home" element={<Home />} />
+                {
+                    routes.map((route, key) => {
+                        return (
+                            <Route path={route.path} element={route.component} key={key} />
+                        )
+                    })
+                }
             </Routes>
         </>
     )
