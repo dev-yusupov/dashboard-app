@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/dashboard-app/static/css/main.afafe084.css",
-    "main.js": "/dashboard-app/static/js/main.6079a2c9.js",
+    "main.css": "/dashboard-app/static/css/main.a094a9b8.css",
+    "main.js": "/dashboard-app/static/js/main.7e94e755.js",
     "static/js/787.92af229c.chunk.js": "/dashboard-app/static/js/787.92af229c.chunk.js",
+    "static/media/dashboard-background.png": "/dashboard-app/static/media/dashboard-background.b23624c106c0696fe1b8.png",
     "static/media/auth-background.png": "/dashboard-app/static/media/auth-background.86a3f7080cba4e960173.png",
     "index.html": "/dashboard-app/index.html",
-    "main.afafe084.css.map": "/dashboard-app/static/css/main.afafe084.css.map",
-    "main.6079a2c9.js.map": "/dashboard-app/static/js/main.6079a2c9.js.map",
+    "main.a094a9b8.css.map": "/dashboard-app/static/css/main.a094a9b8.css.map",
+    "main.7e94e755.js.map": "/dashboard-app/static/js/main.7e94e755.js.map",
     "787.92af229c.chunk.js.map": "/dashboard-app/static/js/787.92af229c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afafe084.css",
-    "static/js/main.6079a2c9.js"
+    "static/css/main.a094a9b8.css",
+    "static/js/main.7e94e755.js"
   ]
 }
