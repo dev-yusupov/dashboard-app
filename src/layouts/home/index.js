@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import routes from "../../routes/dashboard-routes";
 
 import SideBar from "../../components/SideBar"
+import DashboardNavbar from "../../components/DashboardNavbar";
 
 import "./Home.css"
 
@@ -14,6 +15,7 @@ const HomeLayout = () => {
             </div> 
             {/* <div> */}
                 <main className="Main-Section">
+                    <DashboardNavbar />
                     <Routes>
                         {
                             routes.map((route, key) => {

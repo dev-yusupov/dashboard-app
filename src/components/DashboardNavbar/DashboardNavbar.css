@@ -1,13 +1,30 @@
 .DashboardNavbar {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    justify-content: right;
+    align-items: center;
     width: 100%;
-    right: 0;
+    padding: 10px 20px;
+    column-gap: 30px;
 }
 .DashboardNavbar .DashboardNavbar-Profile {
     display: flex;
     flex-direction: row;
     align-items: center;
     column-gap: 10px;
+}
+.DashboardNavbar .DashboardNavbar-Search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 7px;
+    font-size: 16px;
+}
+.DashboardNavbar .DashboardNavbar-Search input {
+    border: 1px solid white;
+    background-color: #0F1535;
+    border-radius: 15px;
+    border: 0.5px solid rgba(226, 232, 240, 0.30);
+    padding: 10px;
+    color: white;
 }
