@@ -4,3 +4,9 @@
     flex-direction: column;
     width: 100%;
 }
+.HomePage-Data-Section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
