@@ -1,9 +1,10 @@
 import "./Home.css"
+import DashboardNavbar from "../../../components/DashboardNavbar"
 
 const Home = () => {
     return (
-        <div className="Home">
-            <h1>Working</h1>
+        <div className="HomePage">
+            <DashboardNavbar />
         </div>
     )
 }

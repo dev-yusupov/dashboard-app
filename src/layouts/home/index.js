@@ -8,19 +8,23 @@ import "./Home.css"
 const HomeLayout = () => {
 
     return (
-        <div className="Dashboard">  
-        <SideBar />
-        <main className="Main-Section">
-        <Routes>
-                {
-                    routes.map((route, key) => {
-                        return (
-                            <Route path={route.path} element={route.component} key={key} />
-                        )
-                    })
-                }
-            </Routes>
-        </main>
+        <div className="Dashboard"> 
+            <div className="Dashboard-SideBar">
+                <SideBar />
+            </div> 
+            {/* <div> */}
+                <main className="Main-Section">
+                    <Routes>
+                        {
+                            routes.map((route, key) => {
+                                return (
+                                    <Route path={route.path} element={route.component} key={key} />
+                                )
+                            })
+                        }
+                    </Routes>
+                </main>
+            {/* </div> */}
         </div>
     )
 }
