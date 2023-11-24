@@ -1,0 +1,13 @@
+.DashboardNavbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    right: 0;
+}
+.DashboardNavbar .DashboardNavbar-Profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
