@@ -3,4 +3,30 @@
     background-size: cover;
     background-position: right;
     display: flex;
+    flex-direction: column;
+    width: 624px;
+    height: 344px;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.MainPoster-Btn {
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: none;
+}
+
+.MainPoster section.MainPosterTop {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.MainPoster .MainPosterTop .MainPoster-Name {
+    font-size: 20px;
+    font-weight: 700;
+}
+.MainPoster .MainPosterTop .MainPoster-Paragraph {
+    font-size: 14px;
 }
