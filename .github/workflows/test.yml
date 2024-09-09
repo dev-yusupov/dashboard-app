@@ -1,0 +1,29 @@
+name: Run tests on Pull Request
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+    
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: "20"
+    
+    # Step 2: Install dependencies
+    - name: Install dependencies
+      run: npm install
+
+    # Step 3: Run tests
+    - name: Run tests
+      run: npm test -- --watchAll=false
