@@ -1,10 +1,10 @@
-import Button from './components/Button/Button';
 import './App.css';
+import InputField from './components/InputField/InputField';
 
 function App() {
   return (
     <div className="App">
-      <Button label="Click Me!" onClick={() => console.log("Hello, World!")} variant="primary" />
+      <InputField width='513px' label='Email' type="email" placeholder="Enter your email" required errorMessage="This field is required" />
     </div>
   );
 }
