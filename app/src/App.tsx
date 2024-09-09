@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Button label="Click Me!" onClick={() => console.log("Hello, World!")} />
+      <Button label="Click Me!" onClick={() => console.log("Hello, World!")} variant="primary" />
     </div>
   );
 }
