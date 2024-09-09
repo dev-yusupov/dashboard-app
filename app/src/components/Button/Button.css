@@ -1,0 +1,53 @@
+/* Base styles for all buttons */
+.button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+  
+/* Focus style for buttons */
+.button:focus {
+    box-shadow: 0 0 0 2px #5D5FEF; /* Adjust color as needed */
+}
+  
+/* Hover style for buttons */
+.button:hover {
+    background-color: #6666FF; /* Adjust color as needed */
+}
+  
+/* Active state style for buttons */
+.button:active {
+    transform: translateY(2px);
+}
+  
+/* Primary button style */
+.primary-button {
+    background-color: #5D5FEF;
+    color: #fff;
+}
+  
+/* Secondary button style */
+.secondary-button {
+    background-color: transparent;
+    color: #0F3659;
+    border: 2px solid #C3D3E2;
+}
+  
+/* White button style */
+.white-button {
+    background-color: #fff;
+    color: #5D5FEF;
+}
+  
+  /* Disabled button style */
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
