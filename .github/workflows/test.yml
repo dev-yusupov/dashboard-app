@@ -21,6 +21,10 @@ jobs:
         node-version: "20"
     
     # Step 2: Install dependencies
+
+    - name: Install dependencies
+      run: cd app
+    
     - name: Install dependencies
       run: npm install
 
