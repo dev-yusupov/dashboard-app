@@ -1,3 +1,3 @@
-module.exports = {
-    presets: ["@babel/preset-react"], // Add this line
+export default {
+    presets: ['@babel/preset-react'], // Add this line
 };
