@@ -1,15 +1,15 @@
 .input-field {
     margin-bottom: 1.5rem;
     position: relative;
-  }
-  
-  .input-container {
+}
+
+.input-container {
     position: relative;
     display: flex;
     align-items: center;
-  }
-  
-  .input-field input {
+}
+
+.input-field input {
     background-color: #f0f4f8;
     padding: 16px 20px;
     border: 1px solid #d1d5db;
@@ -19,19 +19,19 @@
     width: 100%;
     transition: all 0.3s ease;
     color: #333;
-  }
-  
-  .input-field input::placeholder {
+}
+
+.input-field input::placeholder {
     color: #888;
     font-size: 0.9rem;
-  }
-  
-  .input-field input:focus {
+}
+
+.input-field input:focus {
     border-color: #4caf50;
     box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
-  }
-  
-  .input-field.focused .input-label {
+}
+
+.input-field.focused .input-label {
     top: -20px;
     left: 12px;
     font-size: 0.8rem;
@@ -39,18 +39,18 @@
     background-color: #f0f4f8;
     padding: 0 5px;
     border-radius: 3px;
-  }
-  
-  .input-field.error input {
+}
+
+.input-field.error input {
     border-color: red;
     background-color: #ffe6e6;
-  }
-  
-  .input-field.error .input-label {
+}
+
+.input-field.error .input-label {
     color: red;
-  }
-  
-  .input-field .input-label {
+}
+
+.input-field .input-label {
     position: absolute;
     top: 50%;
     left: 16px;
@@ -59,46 +59,45 @@
     font-size: 1rem;
     color: #888;
     pointer-events: none;
-  }
-  
-  .input-field.focused .input-label,
-  .input-field input:not(:placeholder-shown) + .input-label {
+}
+
+.input-field.focused .input-label,
+.input-field input:not(:placeholder-shown) + .input-label {
     top: -20px;
     left: 12px;
     font-size: 0.8rem;
     color: #4caf50;
-  }
-  
-  .input-field .required {
+}
+
+.input-field .required {
     color: red;
     font-weight: bold;
-  }
-  
-  .input-field .error-message {
+}
+
+.input-field .error-message {
     color: red;
     font-size: 0.85rem;
     margin-top: 0.5rem;
     display: inline-block;
-  }
-  
-  .input-field .error-icon {
+}
+
+.input-field .error-icon {
     position: absolute;
     right: 10px;
     font-size: 1.2rem;
     color: red;
     cursor: pointer;
-  }
-  
-  .input-field .valid-icon {
+}
+
+.input-field .valid-icon {
     position: absolute;
     right: 10px;
     font-size: 1.2rem;
     color: #4caf50;
-  }
-  
-  .input-field .character-count {
+}
+
+.input-field .character-count {
     font-size: 0.85rem;
     color: #555;
     margin-top: 0.5rem;
-  }
-  
+}
