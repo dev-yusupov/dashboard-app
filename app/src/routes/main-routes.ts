@@ -15,7 +15,7 @@ import Dashboard from '../pages/Dashboard/Dashboard';
 
 export const mainRoutes: RouteType[] = [
     {
-        path: '/dashboard',
+        path: '/',
         name: 'Dashboard',
         icon: FaChartPie,
         component: Dashboard,
