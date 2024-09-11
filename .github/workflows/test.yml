@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  setup:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,58 +26,32 @@ jobs:
         run: npm install
         working-directory: ./app
 
-      # Step 4: Cache node_modules to speed up subsequent runs
-      - name: Cache node_modules
-        uses: actions/cache@v3
-        with:
-          path: ./app/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      # Step 5: Upload node_modules as an artifact
-      - name: Upload node_modules as an artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: node_modules
-          path: ./app/node_modules
-
-  lint:
-    runs-on: ubuntu-latest
-    needs: setup  # This ensures that the 'lint' job runs after 'setup' is complete
-
-    steps:
-      # Step 1: Checkout the code
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      # Step 2: Download node_modules artifact
-      - name: Download node_modules artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: node_modules
-
-      # Step 3: Run ESLint to check linting
+      # Step 4: Run ESLint to check linting
       - name: Run ESLint
         run: npm run lint
         working-directory: ./app
 
   test:
     runs-on: ubuntu-latest
-    needs: setup  # This ensures that the 'test' job runs after 'setup' is complete
+    needs: lint  # This ensures that the 'test' job runs only after 'lint' passes
 
     steps:
       # Step 1: Checkout the code
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      # Step 2: Download node_modules artifact
-      - name: Download node_modules artifact
-        uses: actions/download-artifact@v3
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          name: node_modules
+          node-version: "20"
 
-      # Step 3: Run tests
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./app
+
+      # Step 4: Run tests
       - name: Run tests
         run: npm test -- --watchAll=false
         working-directory: ./app
