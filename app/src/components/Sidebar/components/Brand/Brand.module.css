@@ -1,0 +1,15 @@
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.brand img {
+    height: 56px;
+}
+
+.brand .brandHeader {
+    font-weight: 600;
+}
