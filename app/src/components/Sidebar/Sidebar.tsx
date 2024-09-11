@@ -1,3 +1,4 @@
+// Sidebar.tsx
 import React from 'react';
 import { mainRoutes } from '../../routes/main-routes';
 import Brand from './components/Brand/Brand';
@@ -8,7 +9,7 @@ import Content from './components/Content/Content';
 
 const Sidebar: React.FC = () => {
     return (
-        <div className={styles.sidebar}>
+        <div className={styles.sidebar} data-testid="sidebar">
             <Brand />
             {mainRoutes.map((route) => (
                 <Link
