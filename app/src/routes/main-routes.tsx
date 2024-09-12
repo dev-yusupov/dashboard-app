@@ -11,55 +11,55 @@ import { IoSettingsOutline } from 'react-icons/io5';
 import { RiShoppingBag4Line } from 'react-icons/ri';
 
 import { RouteType } from '../types/routes';
-import Dashboard from '../pages/Dashboard/Dashboard';
+import Main from '../pages/Main/Main';
 
 export const mainRoutes: RouteType[] = [
     {
         path: '/',
         name: 'Dashboard',
         icon: <FaChartPie />,
-        component: Dashboard,
+        component: Main,
     },
     {
         path: '/leaderboard',
         name: 'Leaderboard',
         icon: <LuBarChart2 />,
-        component: Dashboard,
+        component: Main,
     },
     {
         path: '/order',
         name: 'Order',
         icon: <LuShoppingCart />,
-        component: Dashboard,
+        component: Main,
     },
     {
         path: '/products',
         name: 'Products',
         icon: <RiShoppingBag4Line />,
-        component: Dashboard,
+        component: Main,
     },
     {
         path: '/sales-report',
         name: 'Sales Report',
         icon: <LuLineChart />,
-        component: Dashboard,
+        component: Main,
     },
     {
         path: '/messages',
         name: 'Messages',
         icon: <LuMessageSquare />,
-        component: Dashboard,
+        component: Main,
     },
     {
         path: '/settings',
         name: 'Settings',
         icon: <IoSettingsOutline />,
-        component: Dashboard,
+        component: Main,
     },
     {
         path: '/signout',
         name: 'Sign Out',
         icon: <PiSignOut />,
-        component: Dashboard,
+        component: Main,
     },
 ];

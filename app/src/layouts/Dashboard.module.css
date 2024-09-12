@@ -1,0 +1,12 @@
+.dashboardLayout {
+    display: flex;
+    flex-direction: row;
+}
+.dashboardContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.mainContent {
+    padding: 20px;
+}
