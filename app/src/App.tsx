@@ -1,4 +1,3 @@
-// App.tsx
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import NotFound from './pages/NotFound/NotFound';
@@ -9,7 +8,7 @@ const App: React.FC = () => {
         <HelmetProvider>
             <Router>
                 <Routes>
-                    <Route path="/" element={<DashboardLayout />} />
+                    <Route path="/d/*" element={<DashboardLayout />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Router>

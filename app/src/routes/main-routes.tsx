@@ -1,4 +1,3 @@
-// routes/index.ts
 import { FaChartPie } from 'react-icons/fa';
 import {
     LuBarChart2,
@@ -12,52 +11,53 @@ import { RiShoppingBag4Line } from 'react-icons/ri';
 
 import { RouteType } from '../types/routes';
 import Main from '../pages/Main/Main';
+import Product from '../pages/Product/Product';
 
 export const mainRoutes: RouteType[] = [
     {
-        path: '/',
+        path: '/d/main',
         name: 'Dashboard',
         icon: <FaChartPie />,
         component: Main,
     },
     {
-        path: '/leaderboard',
+        path: '/d/leaderboard',
         name: 'Leaderboard',
         icon: <LuBarChart2 />,
         component: Main,
     },
     {
-        path: '/order',
+        path: '/d/order',
         name: 'Order',
         icon: <LuShoppingCart />,
         component: Main,
     },
     {
-        path: '/products',
+        path: '/d/products',
         name: 'Products',
         icon: <RiShoppingBag4Line />,
-        component: Main,
+        component: Product,
     },
     {
-        path: '/sales-report',
+        path: '/d/sales-report',
         name: 'Sales Report',
         icon: <LuLineChart />,
         component: Main,
     },
     {
-        path: '/messages',
+        path: '/d/messages',
         name: 'Messages',
         icon: <LuMessageSquare />,
         component: Main,
     },
     {
-        path: '/settings',
+        path: '/d/settings',
         name: 'Settings',
         icon: <IoSettingsOutline />,
         component: Main,
     },
     {
-        path: '/signout',
+        path: '/d/signout',
         name: 'Sign Out',
         icon: <PiSignOut />,
         component: Main,

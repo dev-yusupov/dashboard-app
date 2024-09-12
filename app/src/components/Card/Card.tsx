@@ -15,8 +15,10 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, content }) => (
     <div className="card">
-        <h2>{title}</h2>
-        <p>{description}</p>
+        <div>
+            <h2>{title}</h2>
+            <p>{description}</p>
+        </div>
         {content}
     </div>
 );

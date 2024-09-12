@@ -62,7 +62,7 @@ describe('Sidebar Component', () => {
 
     it('should correctly apply the active class to the active link', () => {
         render(
-            <MemoryRouter initialEntries={['/']}>
+            <MemoryRouter initialEntries={['/d/main']}>
                 <Sidebar />
                 <Routes>
                     {mainRoutes.map((route) => (
@@ -81,7 +81,7 @@ describe('Sidebar Component', () => {
 
     it('should navigate to the correct route when a link is clicked', () => {
         render(
-            <MemoryRouter initialEntries={['/']}>
+            <MemoryRouter initialEntries={['/d/main']}>
                 <Sidebar />
                 <Routes>
                     {mainRoutes.map((route) => (
