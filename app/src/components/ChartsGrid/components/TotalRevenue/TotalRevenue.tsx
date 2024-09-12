@@ -23,8 +23,8 @@ const data = [
 
 const TotalRevenue: React.FC = () => {
     return (
-        <div className={styles.chartContainer}>
-            <ResponsiveContainer width="100%" height={300}>
+        <div className={styles.chartContainer} style={{ width: 500, height: 250 }}>
+            <ResponsiveContainer>
                 <BarChart
                     data={data}
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
@@ -62,14 +62,14 @@ const TotalRevenue: React.FC = () => {
                     />
                     <Bar
                         dataKey="pv"
-                        name="Revenue"
+                        name="Online Sales"
                         fill="#0095FF"
                         radius={5}
                         animationDuration={1000}
                     />
                     <Bar
                         dataKey="uv"
-                        name="Visits"
+                        name="Offline Sales"
                         fill="#00E096"
                         radius={5}
                         animationDuration={1000}
