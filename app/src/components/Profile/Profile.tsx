@@ -10,11 +10,11 @@ interface ProfileProps {
 
 const Profile: React.FC<ProfileProps> = ({ name, role }) => {
     return (
-        <div className={styles.profileContainer}>
+        <div className={styles.profileContainer} data-testid={`profile-${name}`}>
             <img src={profile} width={45} />
             <div className={styles.profileText}>
-                <h5>{name}</h5>
-                <p>{role}</p>
+                <h5 data-testid={`profile-name-${name}`}>{name}</h5>
+                <p data-testid={`profile-role-${role}`}>{role}</p>
             </div>
             <MdKeyboardArrowDown />
         </div>
