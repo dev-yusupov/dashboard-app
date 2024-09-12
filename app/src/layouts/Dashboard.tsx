@@ -1,4 +1,3 @@
-// Dashboard.tsx
 import React from 'react';
 import styles from './Dashboard.module.css';
 import Sidebar from '../components/Sidebar/Sidebar';
@@ -13,9 +12,7 @@ interface RouteWithHelmetProps {
 }
 
 const RouteWithHelmet: React.FC<RouteWithHelmetProps> = ({
-    // eslint-disable-next-line react/prop-types
     name,
-    // eslint-disable-next-line react/prop-types
     component: Component,
 }) => {
     return (
@@ -39,7 +36,7 @@ const DashboardLayout: React.FC = () => {
                         {mainRoutes.map((route, index) => (
                             <Route
                                 key={index}
-                                path={route.path}
+                                path={route.path.replace(/^\/d/, '')} // Remove '/d' prefix
                                 element={
                                     <RouteWithHelmet
                                         name={route.name}

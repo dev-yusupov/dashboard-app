@@ -4,7 +4,7 @@ import styles from './Main.module.css';
 const Main: React.FC = () => {
     return (
         <>
-            <h1 className={styles.test}>Google</h1>
+            <h1 className={styles.test}>Main</h1>
         </>
     );
 };
