@@ -20,7 +20,7 @@ const VisitorInsights = () => {
     ];
 
     return (
-        <div style={{ width: '100%', height: 300 }} role="region">
+        <div style={{ width: 300, height: 200 }} role="region">
             <ResponsiveContainer>
                 <LineChart data={data} data-testid="recharts-linechart">
                     <CartesianGrid strokeDasharray="5 5" />

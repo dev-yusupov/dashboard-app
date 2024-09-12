@@ -4,10 +4,11 @@ import TodaySale from '../../components/TodaySale/TodaySale';
 import VisitorInsights from '../../components/Visitor/Visitor';
 
 import styles from './Main.module.css';
+import ChartsGrid from '../../components/ChartsGrid/ChartsGrid';
 
 const Main: React.FC = () => {
     return (
-        <>
+        <div className={styles.main}>
             <div className={styles.topInsights}>
                 <Card
                     title="Today’s Sales"
@@ -16,7 +17,8 @@ const Main: React.FC = () => {
                 />
                 <Card title="Visitor Insights" content={<VisitorInsights />} />
             </div>
-        </>
+            <ChartsGrid />
+        </div>
     );
 };
 
