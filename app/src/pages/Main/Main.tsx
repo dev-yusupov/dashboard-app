@@ -1,10 +1,17 @@
 import React from 'react';
-import styles from './Main.module.css';
+import Card from '../../components/Card/Card';
+import TodaySale from '../../components/TodaySale/TodaySale';
 
 const Main: React.FC = () => {
     return (
         <>
-            <h1 className={styles.test}>Main</h1>
+            <div>
+                <Card
+                    title="Today’s Sales"
+                    description="Sales Summery"
+                    content={<TodaySale />}
+                />
+            </div>
         </>
     );
 };
