@@ -1,10 +1,10 @@
 import React from 'react';
-import Sidebar from '../../components/Sidebar/Sidebar';
+import Navbar from '../../components/Navbar/Navbar';
 
 const Dashboard: React.FC = () => {
     return (
         <>
-            <Sidebar />
+            <Navbar />
         </>
     );
 };
