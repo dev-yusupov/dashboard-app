@@ -20,17 +20,32 @@ const VisitorInsights = () => {
     ];
 
     return (
-        <div style={{ width: '100%', height: 300 }}>
+        <div style={{ width: '100%', height: 300 }} role="region">
             <ResponsiveContainer>
-                <LineChart data={data}>
+                <LineChart data={data} data-testid="recharts-linechart">
                     <CartesianGrid strokeDasharray="5 5" />
-                    <XAxis dataKey="name" />
-                    <YAxis domain={[0, 400]} /> {/* Set the y-axis domain */}
-                    <Tooltip />
-                    <Legend />
-                    <Line type="monotone" dataKey="loyal" stroke="#3CD856" />
-                    <Line type="monotone" dataKey="new" stroke="#A700FF" />
-                    <Line type="monotone" dataKey="unique" stroke="#EF4444" />
+                    <XAxis dataKey="name" data-testid="recharts-xaxis" />
+                    <YAxis domain={[0, 400]} data-testid="recharts-yaxis" />
+                    <Tooltip data-testid="recharts-tooltip-wrapper" />
+                    <Legend data-testid="recharts-legend-wrapper" />
+                    <Line
+                        type="monotone"
+                        dataKey="loyal"
+                        stroke="#3CD856"
+                        data-testid="recharts-line"
+                    />
+                    <Line
+                        type="monotone"
+                        dataKey="new"
+                        stroke="#A700FF"
+                        data-testid="recharts-line"
+                    />
+                    <Line
+                        type="monotone"
+                        dataKey="unique"
+                        stroke="#EF4444"
+                        data-testid="recharts-line"
+                    />
                 </LineChart>
             </ResponsiveContainer>
         </div>
