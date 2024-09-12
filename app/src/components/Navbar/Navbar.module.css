@@ -1,0 +1,16 @@
+nav.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+nav.navbar .navbarControls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}

@@ -1,0 +1,12 @@
+.profileContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.profileContainer .profileText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
