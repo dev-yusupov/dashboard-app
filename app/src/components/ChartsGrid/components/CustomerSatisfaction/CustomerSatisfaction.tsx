@@ -47,8 +47,8 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({ active, payload, label })
 
 const CustomerSatisfactionChart: React.FC = () => {
     return (
-        <div className="chart-container">
-            <ResponsiveContainer width="100%" height={250}>
+        <div className="chartContainer" style={{ width: '100%', height: '100%' }}>
+            <ResponsiveContainer width="100%" height="100%">
                 <AreaChart
                     data={data}
                     margin={{ top: 20, right: 30, left: -10, bottom: 50 }}
@@ -109,7 +109,7 @@ const CustomerSatisfactionChart: React.FC = () => {
                     />
                 </AreaChart>
             </ResponsiveContainer>
-            <div className="legend-container">
+            {/* <div className="legend-container">
                 <div className="legend-item">
                     <span
                         className="legend-color"
@@ -124,7 +124,7 @@ const CustomerSatisfactionChart: React.FC = () => {
                     ></span>
                     <span className="legend-text">This Month: $4,504</span>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

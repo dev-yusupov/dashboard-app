@@ -25,10 +25,7 @@ const TotalRevenue: React.FC = () => {
     return (
         <div className={styles.chartContainer} style={{ width: 500, height: 250 }}>
             <ResponsiveContainer>
-                <BarChart
-                    data={data}
-                    margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-                >
+                <BarChart data={data}>
                     <CartesianGrid stroke="#f5f5f5" />
                     <XAxis
                         dataKey="name"
