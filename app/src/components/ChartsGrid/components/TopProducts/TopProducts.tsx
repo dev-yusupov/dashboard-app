@@ -45,7 +45,10 @@ const data = [
 
 const TopProductsChart: React.FC = () => {
     return (
-        <div className={styles.topProductsContainer}>
+        <div
+            className={styles.topProductsContainer}
+            style={{ height: '100%', width: '100%' }}
+        >
             <ResponsiveContainer width="100%" height="100%">
                 <BarChart
                     aria-label="Top Products Chart"
@@ -59,7 +62,7 @@ const TopProductsChart: React.FC = () => {
                         type="category"
                         fontSize={14}
                         tickLine={false}
-                        width={160}
+                        width={200}
                     />
                     <Tooltip />
                     <Legend />
