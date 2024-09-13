@@ -1,0 +1,51 @@
+/* Table styles */
+.top-products-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.top-products-table th,
+.top-products-table td {
+    padding: 15px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.top-products-table th {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2e2e2e;
+    background-color: #f2f4f7;
+}
+
+.top-products-table td {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Popularity bar container */
+.popularity-bar-container {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    width: 100%;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.popularity-bar {
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Sales badge styles */
+.sales-badge {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    text-align: center;
+}

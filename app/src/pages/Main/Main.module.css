@@ -1,3 +1,9 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .topInsights {
     display: flex;
     flex-direction: row;
